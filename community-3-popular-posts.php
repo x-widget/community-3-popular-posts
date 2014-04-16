@@ -1,12 +1,19 @@
 <?php
 widget_css();
 
+
+if( $widget_config['title'] ) $title = $widget_config['title'];
+else $title = 'Popular Posts';
+
+if( $widget_config['no'] ) $limit = $widget_config['no'];
+else $limit = 4;
+
 $posts = g::posts(
 	array(
-		'domain'				=> etc::domain(),
-		'wr_datetime'=> '>=' . g::datetime( time() - ONEDAY * 7),
-		'order by'=>'wr_hit DESC',
-		'limit'=>4
+		'domain'		=>	etc::domain(),
+		'wr_datetime'	=>	'>=' . g::datetime( time() - ONEDAY * 7),
+		'order by'		=>	'wr_hit DESC',
+		'limit'			=>	$limit
 	)
 );
 ?>
@@ -16,7 +23,7 @@ $posts = g::posts(
 			<tr valign='top'>
 				<td align='left' class='title-left'>
 					<img src="<?=x::url_theme()?>/img/popular-posts.png">
-					<span class='label'>조회수가 많은 글</span>
+					<span class='label'><?=$title?></span>
 				</td>
 			</tr>
 		</table>
