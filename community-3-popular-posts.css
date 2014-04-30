@@ -1,16 +1,16 @@
 
 /**POPULAR POSTS*/
-.sidebar .popular-posts {
+.popular-posts {
 	border: solid 1px #bbbbbb;
 	margin-bottom: 10px;
 	height: 140px;
 }
 
-.sidebar .popular-posts a {
+.popular-posts a {
 	text-decoration: none;
 }
 
-.sidebar .popular-posts .title {
+.popular-posts .title {
 	padding:0 0 4px 5px;
 	height: 25px;
 	line-height: 25px;
@@ -21,18 +21,18 @@
 	color:#444444;
 }
 
-.sidebar .popular-posts .title img {
+.popular-posts .title img {
 	margin: 0 2px 0 0;
 	position: relative;
 	top: -2px;
 	margin-right:4px;
 }
 
-.sidebar .popular-posts .popular-posts-items {
+.popular-posts .popular-posts-items {
 	padding: 5px;
 }
 
-.sidebar .popular-posts .popular-posts-items > .row {
+.popular-posts .popular-posts-items > .row {
 	border-bottom: dashed 1px #bebebe;
 	height: 25px;
 	line-height: 25px;
@@ -40,11 +40,11 @@
 	word-break:break-all;
 }
 
-.sidebar .popular-posts .popular-posts-items .last-post {
+.popular-posts .popular-posts-items .last-post {
 	border-bottom: 0;	
 }
 
-.sidebar .popular-posts .post-num {
+.popular-posts .post-num {
 	display: inline-block;
 	width: 14px;
 	height: 15px;
@@ -55,10 +55,10 @@
 	text-align: center;
 	margin-right: 5px;
 }
-.sidebar .popular-posts .popular-posts-items table td .num_views {
+.popular-posts .popular-posts-items table td .num_views {
 	font-size: 11px;
 }
-.sidebar .popular-posts .popular-posts-items table td .num_comments {
+.popular-posts .popular-posts-items table td .num_comments {
 	color: #cc4235;
 	font-size: 11px;
 }

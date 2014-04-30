@@ -22,7 +22,7 @@ $posts = g::posts(
 		<table width='100%'>
 			<tr valign='top'>
 				<td align='left' class='title-left'>
-					<img src="<?=x::url_theme()?>/img/popular-posts.png">
+					<img src="<?=$widget_config['url']?>/img/popular-posts.png">
 					<span class='label'><?=$title?></span>
 				</td>
 			</tr>
